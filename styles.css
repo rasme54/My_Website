@@ -1,10 +1,15 @@
-html{
+/* main element classes */
+html {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
+
+
+/* header-connected classes */
 header {
-    background-color: rgb(3, 0, 66);
+    background-color: rgb(7, 0, 46);
     display:flex;
     font-family: 'Poppins';
     width: 100%;
@@ -17,7 +22,15 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: 0;
 }
-.name_surname_container{
+        /* left part header-connected classes */
+.logo-header {
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 5px 0px 5px 0px;
+    flex-direction: column;
+}
+.upper-line {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,14 +40,7 @@ header {
     border-bottom: 1px solid white;
     border-width: 20%;
 }
-.name_surname_tittle_container{
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 5px 0px 5px 0px;
-    flex-direction: column;
-}
-.tittle_container{
+.lower-line {
     color: white;
     display: flex;
     gap: 5px;
@@ -44,69 +50,49 @@ header {
     padding-top: 5px;
     text-align: justify;
 }
-.name{
+.white-text {
     color: white;
 }
-.surname{
+.yellow-text {
     color: rgb(255, 255, 0);
 }
-.right_side_header{
+        /* right part header-connected classes */
+.nav-header {
     display: flex;
     align-items: center;
     justify-self: center;
-    gap: 25px;
-    margin-right: 40px;
+    gap: 35px;
+    margin-right: 3%;
+    font-weight: 300;
+    color: rgb(255, 255, 0);
 }
 
-.header_menu{
-    align-items: center;
-    color: rgb(255, 255, 0);
-    padding-left: 10px;
-    padding-right: 10px;
-    background:  rgb(3, 0, 66);
-    border-radius: 10px;
-    gap: 20px;
-    font-weight: 400;
-}
-.header_menu2{
-    align-items: center;
-    color: rgb(255, 255, 0);
-    font-size: 15px;
-    padding: 2px 12px 2px 12px;
-    background:  rgb(3, 0, 66);
-    border-radius: 10px;
-    gap: 20px;
-}
 
-.headerLP {
-    display: flex;
-    align-items: baseline;
-    border: 2px solid blue;
-    justify-content: space-between;
-}
-body{
+
+/* body-connected classes */
+body {
     font-family: 'Poppins';
     padding: 0;
     margin: 0;
+    background-color: rgb(3, 0, 66);
 }
-.aboutme{
+.aboutme {
     display: flex;
     justify-content: center;
-    border: 2px solid green;
     align-items: center;
     width: 100%;
     height: 500px;
-    padding-top:79px;
+    padding-top:99px;
 }
 
-.left_body_container{
+.left_body_container {
 
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
-.right_body_container{
+.right_body_container {
 
     max-width: 50%;
     display: flex;
@@ -114,47 +100,106 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:whitesmoke;
+    border: 5px solid red;
 }
 
-.image1{
+.image1 {
     padding: 10%;
     max-width: 40%;
     margin: 0px;
 }
-a{
+a {
     text-decoration: none;
     border: 0;
+    color: rgb(255, 255, 0);
 }
-a:hover{
+a:hover {
     color: white;  
 }
-h2{
-    width: 100%;
+h1 {
+    color: rgb(255, 255, 0);
     text-align: center;
-    color: gold;
-    align-items: center;
 }
-h3{
+h2 {
     width: 100%;
     text-align: center;
     color: rgb(255, 255, 0);
     align-items: center;
 }
-
-p{
+h3 {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 0);
+    align-items: center;
+}
+.paragraph-white {
     padding: 20px;
     font-size: 15px;
-    text-align: justify;
-    border: 1px dashed black;
+    text-align: left;
     margin: 10px;
-    text-indent: 20px;
     width: 80%;
     justify-self: center;
+    color: white;
 }
-.education-header{
-    background-color: rgb(3, 0, 66);
-    border: 2px solid red;
-    display: block;
+.body-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.body-header {
+    background-color: rgb(7, 0, 46);
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+}
+.skill-blocks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    justify-content: center;
+    padding-top: 3%;
+    gap: 10px;
+    margin: 30px 10% 40px 10%;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 0, 90);
+    border-radius: 10px;
+    transition: width 0.1s, height 0.1s;
+    transition-timing-function: linear;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skill-box:hover {
+    width: 320px;
+    height: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(6, 1, 99);
+}
+.box-text {
+    color: white;
+    font-size: 15px;
+    margin: 5% 0% 5% 0%;
+    border: 1px solid white;
+    padding: 15px;
+    width: 238px;
+    height: 161px;
+    text-align: justify;
+}
+footer {
+    width: 100%;
+    background-color: rgb(7, 0, 46);
+    height: 50px;
+    color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
